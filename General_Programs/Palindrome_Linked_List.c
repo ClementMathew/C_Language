@@ -19,6 +19,7 @@ int main()
     printf("Enter data into the list\n");
     count = create(&p);
     result = palin_check(p, count);
+
     if (result == 1)
     {
         printf("The linked list is a palindrome.\n");
@@ -28,6 +29,7 @@ int main()
         printf("The linked list is not a palindrome.\n");
     }
     release(&p);
+
     return 0;
 }
 
@@ -39,6 +41,7 @@ int palin_check(struct node *p, int count)
     while (i != count / 2)
     {
         front = rear = p;
+
         for (j = 0; j < i; j++)
         {
             front = front->next;
@@ -66,20 +69,25 @@ int create(struct node **head)
     {
         printf("Enter number : ");
         scanf("%d", &c);
+
         count++;
         temp = (struct node *)malloc(sizeof(struct node));
         temp->num = c;
         temp->next = *head;
         *head = temp;
+
         printf("Do you wish to continue [1/0] : ");
         scanf("%d", &ch);
     } while (ch != 0);
+
     printf("\n");
+
     return count;
 }
 void release(struct node **head)
 {
     struct node *temp = *head;
+
     while ((*head) != NULL)
     {
         (*head) = (*head)->next;

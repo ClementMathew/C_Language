@@ -5,11 +5,14 @@
 void main()
 {
     int r, c, i, j, zero = 0;
+
     printf("Enter the no of rows and columns : ");
     scanf("%d %d", &r, &c);
+
     int matrix[r][c];
 
     printf("Enter the matrix : ");
+
     for (i = 0; i < r; i++)
     {
         for (j = 0; j < c; j++)
@@ -19,9 +22,11 @@ void main()
     }
 
     printf("The lower half : ");
+
     for (i = 0; i < r; i++)
     {
         printf("\n");
+
         for (j = 0; j < c; j++)
         {
             if (i > j)

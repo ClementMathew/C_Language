@@ -3,7 +3,7 @@
 
 #include <stdio.h>
 
-struct euclidianspace
+struct EuclideanSpace
 {
     int distance;
     int total;
@@ -11,10 +11,14 @@ struct euclidianspace
 
 int main()
 {
-    struct euclidianspace d1,d2;
+    struct EuclideanSpace d1, d2;
+
     printf("Enter the two values : ");
-    scanf("%d %d",&d1.distance,&d2.distance);
-    d1.total=d1.distance+d2.distance;
-    printf("The sum of the distance values is %d",d1.total);
+    scanf("%d %d", &d1.distance, &d2.distance);
+
+    d1.total = d1.distance + d2.distance;
+
+    printf("The sum of the distance values is %d", d1.total);
+
     return 0;
 }

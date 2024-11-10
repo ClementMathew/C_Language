@@ -6,28 +6,37 @@
 int main()
 {
     int n;
+
     printf("Enter Day number between 1 and 7: ");
-    scanf("%d",&n);
-    switch(n){
-        case 1:
+    scanf("%d", &n);
+
+    switch (n)
+    {
+    case 1:
         printf("Day of the week is Sunday");
         break;
-        case 2:
+
+    case 2:
         printf("Day of the week is Monday");
         break;
-        case 3:
+
+    case 3:
         printf("Day of the week is Tuesday");
         break;
-        case 4:
+
+    case 4:
         printf("Day of the week is Wednesday");
         break;
-        case 5:
-        printf("Day of the week is Thurshday");
+
+    case 5:
+        printf("Day of the week is Thursday");
         break;
-        case 6:
+
+    case 6:
         printf("Day of the week is Friday");
         break;
-        case 7:
+
+    case 7:
         printf("Day of the week is Saturday");
         break;
     }

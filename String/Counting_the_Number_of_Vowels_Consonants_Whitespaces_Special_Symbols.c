@@ -6,25 +6,34 @@
 int main()
 {
     char str[100];
-    int i,vowels=0,consonants=0,whitespaces=0,specialsymbol=0;
+    int i, vowels = 0, consonants = 0, whitespaces = 0, specialSymbol = 0;
+
     printf("Enter the string: ");
     gets(str);
-    for(i=0;str[i];i++){
-        if((str[i]>=65 && str[i]<=90) || (str[i]>=97 && str[i]<=122)){
-            if(str[i]=='a'||str[i]=='e'||str[i]=='i'||str[i]=='o'||str[i]=='u'){
+
+    for (i = 0; str[i]; i++)
+    {
+        if ((str[i] >= 65 && str[i] <= 90) || (str[i] >= 97 && str[i] <= 122))
+        {
+            if (str[i] == 'a' || str[i] == 'e' || str[i] == 'i' || str[i] == 'o' || str[i] == 'u')
+            {
                 vowels++;
             }
-            else{
+            else
+            {
                 consonants++;
             }
         }
-        else if(str[i]==' '){
+        else if (str[i] == ' ')
+        {
             whitespaces++;
         }
-        else{
-            specialsymbol++;
+        else
+        {
+            specialSymbol++;
         }
     }
-    printf("Vowels = %d\nConsonants = %d\nWhite Spaces = %d\nSpecial Symbols = %d",vowels,consonants,whitespaces,specialsymbol);
+    printf("Vowels = %d\nConsonants = %d\nWhite Spaces = %d\nSpecial Symbols = %d", vowels, consonants, whitespaces, specialSymbol);
+
     return 0;
 }

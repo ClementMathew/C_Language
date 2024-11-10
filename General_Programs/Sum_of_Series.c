@@ -16,6 +16,7 @@ int fact(int m)
 void main()
 {
     int n = 5, i, sum = 0;
+
     for (i = 1; i <= n; i++)
     {
         sum += (fact(i) / i);

@@ -5,11 +5,15 @@
 
 int main()
 {
-    float F,C,x;
+    float F, C, x;
+
     printf("Enter the fareheit value: ");
-    scanf("%f",&F);
-    x=F-32;
-    C=x*5/9;
-    printf("C = %f",C);
+    scanf("%f", &F);
+
+    x = F - 32;
+    C = x * 5 / 9;
+
+    printf("C = %f", C);
+
     return 0;
 }

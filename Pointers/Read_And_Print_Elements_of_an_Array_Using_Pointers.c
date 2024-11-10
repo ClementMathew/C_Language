@@ -7,15 +7,21 @@ int main()
 {
     int arr[100], n, i;
     int *ptr = arr;
+
     printf("Enter size of array : ");
     scanf("%d", &n);
+
     printf("\nEnter elements in array : ");
-    for(i=0;i<n;i++){
-        scanf("%d", ptr+i);  
+
+    for (i = 0; i < n; i++)
+    {
+        scanf("%d", ptr + i);
     }
     printf("The Array elements : ");
-    for(i=0;i<n;i++){
-        printf("%d, ", *(ptr+i));
+
+    for (i = 0; i < n; i++)
+    {
+        printf("%d, ", *(ptr + i));
     }
     return 0;
 }

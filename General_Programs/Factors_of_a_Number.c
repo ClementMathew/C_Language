@@ -5,13 +5,18 @@
 
 int main()
 {
-    int i,num;
+    int i, num;
+
     printf("Enter a Number: ");
-    scanf("%d",&num);
+    scanf("%d", &num);
+
     printf("\nThe factors of the numbers are ");
-    for(i=1;i<=num;i++){
-        if(num%i==0){
-            printf("%d,",i);
+
+    for (i = 1; i <= num; i++)
+    {
+        if (num % i == 0)
+        {
+            printf("%d,", i);
         }
     }
     return 0;
